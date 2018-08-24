@@ -1,7 +1,6 @@
 /* typography */
 
 
-
 /* general */
 	*{
 	 	margin:0;
@@ -13,11 +12,19 @@
 		border-bottom:2px red solid;
 	}
 	#landing{
-		margin-top:38px;  Always set equal to the .header height while .header's position is fixed. 
+		margin-top:38px;  /* Always set equal to the .header height while .header's position is fixed. */
 	}
 
 	a, a:visited, a:link, a:unlocked{
 		text-decoration:none;
+	}
+
+	hr { 
+		color:orange; /* for IE7+ */
+		border-color:orange; /* for Chrome and Safari */
+		background-color:orange; /* for Firefox and Opera */
+		display:inline-block;
+		margin-top:5px;
 	}
 
 /* header */
@@ -78,13 +85,6 @@
 		.sponsor-wrapper p{
 			font-size: 0.75em;
 		}
-	hr { 
-		color:orange; /* for IE7+ */
-		border-color:orange; /* for Chrome and Safari */
-		background-color:orange; /* for Firefox and Opera */
-		display:inline-block;
-		margin-top:5px;
-	}
 	.social-plugins-wrapper{
 		width:24%; /* change to 75% if logo present */
 		height:100%;
@@ -105,3 +105,56 @@
 			height:auto;
 		}
 
+/* landing section */
+	#landing{
+		background-color:#222;
+	}
+	.landing-wrapper{
+		width:100%;
+		text-align:center;
+	}
+	.landing_heading{
+		width:60%;
+		color:#AAA;
+		padding:10% 0 0 0;
+		margin: 0 auto;
+		letter-spacing:1.618px;
+		text-transform:uppercase;
+		text-shadow:1px 1px 20px #000;
+	}
+	.landing_heading h3 {
+		line-height:2;
+		margin-bottom:-10px;
+	}
+	.landing_subheading > hr {
+		margin: 0;
+	}
+	.info-container-btn button{
+		padding:1.5%;
+		margin:10px 7.5px;
+		background:green;
+		border:none;
+		box-shadow:1px 1px 5px #000;
+	}
+
+
+/* about me section */
+	.about-wrapper{
+		width:100%;
+		text-align:center;
+	}
+	.about-wrapper_heading{
+		width:75%;
+		color:#111;
+		padding:2% 0;
+		margin: 0 auto;
+		letter-spacing:1.333;
+		line-height:2;
+		/*text-shadow: 1px 1px 5px #000;*/
+	}
+	.about-wrapper_heading p{
+		line-height:1.618;
+	}
+
+
+/* projects section */
