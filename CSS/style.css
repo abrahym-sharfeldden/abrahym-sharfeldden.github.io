@@ -25,6 +25,15 @@
 		background-color:orange; /* for Firefox and Opera */
 		display:inline-block;
 		margin-top:5px;
+	}	
+	button[type="button"]{
+		min-width:125px;
+		min-height:50px;
+		padding:1.5%;
+		margin:10px 7.5px;
+		background:green;
+		border:none;
+		box-shadow:1px 1px 5px #000;
 	}
 
 /* header */
@@ -129,14 +138,6 @@
 	.landing_subheading > hr {
 		margin: 0;
 	}
-	.info-container-btn button{
-		padding:1.5%;
-		margin:10px 7.5px;
-		background:green;
-		border:none;
-		box-shadow:1px 1px 5px #000;
-	}
-
 
 /* about me section */
 	.about-wrapper{
@@ -156,5 +157,35 @@
 		line-height:1.618;
 	}
 
-
 /* projects section */
+	.projects-wrapper{
+		width:100%;
+		text-align:center;
+		padding:10% 20%;
+		margin:auto;
+		display:inline-flex;
+		justify-content:space-around;
+	}
+	.projects-wrapper_content{
+		width:30%;
+	}
+	.projects-wrapper_img{
+		width:150px;
+		height:150px;
+		margin:0 auto;
+		border:1px dotted black;
+	}
+	.projects-wrapper_img > img{
+		width:100%;
+		height:auto;
+	}
+	.heading {
+		line-height:2;
+	}
+	.description-text{
+		line-height:1.618;
+	}
+	.showcase-visit_btn button{
+		background:black;
+		color:#AAA;
+	}
