@@ -1,191 +1,64 @@
-/* typography */
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html,body{
+	font-family: Roboto;
+	color: white;
+	height: 100%;
+}
+ul {
+	display: inline-flex;
+	list-style-type: none;
+}
 
 
-/* general */
-	*{
-	 	margin:0;
-	 	box-sizing:border-box; /* width includes padding and border */
-	 }
-	.container {
-		width:100%;
-		min-height:400px; /* Default - target specific id's if needed */
-		border-bottom:2px red solid;
-	}
-	#landing{
-		margin-top:38px;  /* Always set equal to the .header height while .header's position is fixed. */
-	}
+section.landing-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
 
-	a, a:visited, a:link, a:unlocked{
-		text-decoration:none;
-	}
+	background: #222 url("../assets/background.png") no-repeat fixed center;
+}
 
-	hr { 
-		color:orange; /* for IE7+ */
-		border-color:orange; /* for Chrome and Safari */
-		background-color:orange; /* for Firefox and Opera */
-		display:inline-block;
-		margin-top:5px;
-	}	
-	button[type="button"]{
-		min-width:125px;
-		min-height:50px;
-		padding:1.5%;
-		margin:10px 7.5px;
-		background:green;
-		border:none;
-		box-shadow:1px 1px 5px #000;
-	}
 
-/* header */
-	.header{
-		width:100%;
-		height:38px;
-		background:#808080;
-		position:fixed;
-			top:0; left:0;
-		/*overflow: hidden;  Used to contain the two floated wrappers below */
-	}
+.title-container header {
+}
 
-	/*.logo-wrapper{
-		width:25%;
-		background-color:cyan;
-		float:left;
-	}
-		.logo-wrapper img {
-			width:50%;
-			justify-content:middle;
-			min-height:35px;
-		}*/
-	.navigation-wrapper{
-		width:100%; /* change to 75% if logo present */
-		/*float:right; not needed if no logo-wrapper*/
-	}
-		.navigation-wrapper ul{
-			text-align:center;
-			padding:0;
-		}
-		.navigation-wrapper li{
-			transition: color 0.25s ease-in;
-			display:inline-block;
-			padding:10px 5%;
-			color:#fff;
-			text-transform:uppercase;
-			letter-spacing:1.618px;
-		}
-		.navigation-wrapper li:hover{
-			color:#444;
-		}
+.title-container header h1 > span {
+	border-bottom: 2px orange dashed;
+}
 
-/* footer */
-	.footer{
-		width:100%;
-		height:30px;
-		line-height:30px; /* Must be the same as .sposor-wrapper's height for vertical alignment */
-		background:#808080;
-		overflow: hidden;  /* Used to contain the two floated wrappers below */
-	}
+.title-container aside {
+	padding: 25px 0;
+}
 
-	.sponsor-wrapper{
-		width:75%;
-		height:30px;
-		border-right:;
-		float:left;
-	}
-		.sponsor-wrapper p{
-			font-size: 0.75em;
-		}
-	.social-plugins-wrapper{
-		width:24%; /* change to 75% if logo present */
-		height:100%;
-		float:right; 
-	}
-		.social-plugins-wrapper ul{
-			height:30px;
-			text-align:center;
-			padding:0;
-		}
-		.social-plugins-wrapper li{
-			height:15px;
-			display:inline-block;
-			padding:2px 3%;
-		}
-		li > img{
-			width:15px;
-			height:auto;
-		}
+aside > ul li {
+	min-width: 75px;
+}
 
-/* landing section */
-	#landing{
-		background-color:#222;
-	}
-	.landing-wrapper{
-		width:100%;
-		text-align:center;
-	}
-	.landing_heading{
-		width:60%;
-		color:#AAA;
-		padding:10% 0 0 0;
-		margin: 0 auto;
-		letter-spacing:1.618px;
-		text-transform:uppercase;
-		text-shadow:1px 1px 20px #000;
-	}
-	.landing_heading h3 {
-		line-height:2;
-		margin-bottom:-10px;
-	}
-	.landing_subheading > hr {
-		margin: 0;
-	}
+section.projects-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #330004;
+}
 
-/* about me section */
-	.about-wrapper{
-		width:100%;
-		text-align:center;
-	}
-	.about-wrapper_heading{
-		width:75%;
-		color:#111;
-		padding:2% 0;
-		margin: 0 auto;
-		letter-spacing:1.333;
-		line-height:2;
-		/*text-shadow: 1px 1px 5px #000;*/
-	}
-	.about-wrapper_heading p{
-		line-height:1.618;
-	}
+.projects-lists {
+	width: 80%;
+	padding: 25px 0;
+	display: inline-flex;
+	justify-content: space-around;
+}
 
-/* projects section */
-	.projects-wrapper{
-		width:100%;
-		text-align:center;
-		padding:10% 20%;
-		margin:auto;
-		display:inline-flex;
-		justify-content:space-around;
-	}
-	.projects-wrapper_content{
-		width:30%;
-	}
-	.projects-wrapper_img{
-		width:150px;
-		height:150px;
-		margin:0 auto;
-		border:1px dotted black;
-	}
-	.projects-wrapper_img > img{
-		width:100%;
-		height:auto;
-	}
-	.heading {
-		line-height:2;
-	}
-	.description-text{
-		line-height:1.618;
-	}
-	.showcase-visit_btn button{
-		background:black;
-		color:#AAA;
-	}
+.project {
+	width: (100%/3);
+}
+
+.project > figure {
+	width: 300px;
+	height: 200px;
+	background: black;
+}
