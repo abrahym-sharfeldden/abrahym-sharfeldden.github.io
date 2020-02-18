@@ -3,6 +3,7 @@
 <head>
 	<title>Abrahym Sharf Eldden - Personal Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="CSS/all.min.css">
 </head>
 <body>
 <section class="landing-container">
@@ -13,9 +14,7 @@
 		</header>
 		<aside>
 			<ul>
-				<li>IMG</li>
-				<li>IMG</li>
-				<li>IMG</li>
+				<li><a href="https://github.com/abrahym-sharfeldden"><i class="fab fa-github fa-2x"></i></a></li>
 			</ul>
 		</aside>
 	</div>
@@ -23,24 +22,28 @@
 <section class="projects-container">
 	<div class="projects-lists">
 		<article class="project">
-			<figure></figure>
-			
+			<figure>
+				<img src="assets/the-color-game.png" alt="The Color Game" />
+			</figure>
+
 			<h1>The Color Game</h1>
 			<ul>
-				<li><button>Github</button></li>
-				<li><button>Live</button></li>
+				<li><button onClick="redirect('github', 'color-game')"><i class="fab fa-github"></i></button></li>
+				<li><button onClick="redirect('website', 'color-game')">Live</button></li>
 			</ul>
-			<p>Description of app Description of app, description of app</p>
+			<p>The Color Game is a Javascript-based game where you pick the color represented in the heading of the page, out of several options. It is built with Vanilla JS</p>
 		</article>
 		<article class="project">
-			<figure></figure>
-			
+			<figure>
+				<img src="assets/cc-validator" alt="Credit Card Validator" />
+			</figure>
+
 			<h1>Credit Card Validator</h1>
 			<ul>
-				<li>Link to repo</li>
-				<li>Link to live</li>
+				<li><button onClick="redirect('github', 'cc-validator')">Github</button></li>
+				<li><button onClick="redirect('website', 'cc-validator')">Live</button></li>
 			</ul>
-			<p>Description of app</p>
+			<p>The Credit Card Validator is a project which can verify card type and validity of the credit card based on the number entered.</p>
 		</article>
 	</div>
 </section>
@@ -55,4 +58,14 @@
 	</div>
 </footer>
 </body>
+<script type="text/javascript">
+function redirect(source, name) {
+	if(source === "github") {
+		location.href = 'https://github.com/abrahym-sharfeldden/' + name;
+	} 
+	else {
+		location.href = 'https://abrahym-sharfeldden.github.io/' + name;
+	}
+}	
+</script>
 </html>
