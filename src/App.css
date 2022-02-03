@@ -1,0 +1,40 @@
+@import-normalize; /* bring in normalize.css styles */
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: darkslateblue;
+}
+
+.wrapper {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 75px 3fr 1fr;
+	grid-template-rows: 3fr 1fr 1fr;
+	grid-template-areas:
+		"lefttab content header"
+		"lefttab content header"
+		"lefttab footer footer";
+}
+
+.header-container {
+	grid-area: header;
+}
+
+.content-container {
+	grid-area: content;
+}
+
+.left-tab-container {
+	grid-area: lefttab;
+}
+
+.footer-container {
+	grid-area: footer;
+}
