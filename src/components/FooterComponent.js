@@ -20,17 +20,33 @@ export default function FooterComponent() {
 			<div className="grid footer-nav">
 				<nav>
 					<ul>
-						<li>01 | home</li>
-						<li>02 | about</li>
-						<li>03 | projects</li>
-						<li>04 | contact</li>
+						<li>
+							<a href="#">home</a>
+						</li>
+						<li>
+							<a href="#">about</a>
+						</li>
+						<li>
+							<a href="#">projects</a>
+						</li>
+						<li>
+							<a href="#">contact</a>
+						</li>
 					</ul>
 				</nav>
 			</div>
 			<div className="grid socials">
 				<ul>
-					<li>LinkedIn Icon</li>
-					<li>GitHub Icon</li>
+					<li>
+						<a href="https://www.linkedin.com/in/abrahym-sharfeldden/" className="icon fab fa-linkedin">
+							<span className="label">LinkedIn</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/abrahym-sharfeldden" className="icon fab fa-github">
+							<span className="label">Github</span>
+						</a>
+					</li>
 				</ul>
 			</div>
 			<div className="grid copyright">

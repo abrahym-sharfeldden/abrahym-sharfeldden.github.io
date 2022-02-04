@@ -1,6 +1,7 @@
-footer {
-	background: teal;
+@import url("./fa/css/brands.min.css");
 
+footer {
+	counter-reset: footer-nav;
 	padding-top: 5em;
 	padding-left: 5em;
 	display: grid;
@@ -48,8 +49,16 @@ footer p {
 }
 
 .copyright {
+	color: #495057;
 	grid-area: copyright;
 }
+
+footer a {
+	text-decoration: none;
+	color: inherit;
+	font-weight: bold;
+}
+
 .footer-nav ul {
 	display: grid;
 	list-style: none;
@@ -79,6 +88,21 @@ footer p {
 .footer-nav ul li:nth-child(4) {
 	grid-area: contact;
 }
+.footer-nav nav ul li {
+	min-width: 75px;
+	font-size: 1em;
+	transition: font-size 0.1s;
+}
+.footer-nav a:hover {
+	font-size: 0.8em;
+}
+
+.footer-nav a:before {
+	counter-increment: footer-nav;
+	content: "0" counter(footer-nav);
+	padding-right: 10px;
+	font-size: 0.9em;
+}
 
 /* .footer-nav ul > li {
 	margin-top: 5px;
@@ -93,5 +117,15 @@ footer p {
 }
 
 .copyright {
-	padding-bottom: 10px;
+	padding-bottom: 20px;
+}
+
+.icon > .label {
+	display: none;
+}
+
+.icon.fab {
+	color: #e5e5e5;
+	opacity: 0.5;
+	font-size: 1.75em;
 }
