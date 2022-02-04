@@ -5,7 +5,7 @@ import "./styles/NavigationComponent.css";
 export default function NavigationComponent() {
 	return (
 		<header className="header-container">
-			<nav>
+			<nav className="header-nav">
 				<ul>
 					<li>Home</li>
 					<li>About</li>
