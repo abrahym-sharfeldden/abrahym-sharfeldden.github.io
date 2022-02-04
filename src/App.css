@@ -5,22 +5,28 @@
 *:after {
 	box-sizing: border-box;
 }
-
+html,
+body {
+	height: 100%;
+}
 body {
 	margin: 0;
 	padding: 0;
 	font-family: "Trebuchet MS", sans-serif;
-	background: darkslateblue;
+	background: #14213d;
+	color: #e5e5e5;
+	/* background: url("./images/bg01.jpg") 100% 100%  no-repeat; */
 }
 
 .wrapper {
 	height: 100vh;
 	display: grid;
-	grid-template-columns: 75px 3fr 2fr;
-	grid-template-rows: 3fr 3fr 1fr;
+	grid-template-columns: 75px 8fr minmax(auto, 600px);
+	grid-template-rows: 3fr 3fr 2fr 1fr;
 	grid-template-areas:
 		"lefttab content header"
 		"lefttab content header"
+		"lefttab content nothing"
 		"lefttab footer footer";
 }
 
