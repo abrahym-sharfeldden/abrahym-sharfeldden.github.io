@@ -1,7 +1,12 @@
 import React from "react";
-import { LeftTabComponent, ContentComponent, NavigationComponent, FooterComponent } from "./components";
+import {
+	LeftTabComponent,
+	ContentComponent,
+	NavigationComponent,
+	FooterComponent,
+} from "./components";
 
-// import "the-new-css-reset/css/reset.css";
+import "the-new-css-reset/css/reset.css";
 import "./App.css";
 
 const App = () => {

@@ -18,6 +18,18 @@ body {
 	/* background: url("./images/bg01.jpg") 100% 100%  no-repeat; */
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 1.25em;
+	font-weight: 700;
+	color: #fff;
+	margin: 0 0 0.55em 0;
+}
+
 ul {
 	list-style: none;
 }
@@ -26,6 +38,12 @@ a {
 	text-decoration: none;
 	color: inherit;
 	font-weight: bold;
+}
+
+a:focus,
+a.icon:focus {
+	color: rgb(252, 163, 17, 0.75);
+	outline: 2px inset rgb(252, 163, 17);
 }
 
 .wrapper {

@@ -15,10 +15,12 @@ export default function FooterComponent() {
 				<p>New York, NY</p>
 			</div>
 			<div className="grid email">
-				<a href="mailto: asharfeldden@gmail.com">asharfeldden@gmail.com</a>
+				<a href="mailto: asharfeldden@gmail.com">
+					asharfeldden@gmail.com
+				</a>
 			</div>
 			<div className="grid footer-nav">
-				<nav>
+				{/* <nav>
 					<ul>
 						<li>
 							<a href="/#">home</a>
@@ -33,24 +35,31 @@ export default function FooterComponent() {
 							<a href="/#">contact</a>
 						</li>
 					</ul>
-				</nav>
+				</nav> */}
 			</div>
 			<div className="grid socials">
 				<ul>
 					<li>
-						<a href="https://www.linkedin.com/in/abrahym-sharfeldden/" className="icon fab fa-linkedin">
+						<a
+							href="https://www.linkedin.com/in/abrahym-sharfeldden/"
+							className="icon fab fa-linkedin">
 							<span className="label">LinkedIn</span>
 						</a>
 					</li>
 					<li>
-						<a href="https://github.com/abrahym-sharfeldden" className="icon fab fa-github">
+						<a
+							href="https://github.com/abrahym-sharfeldden"
+							className="icon fab fa-github">
 							<span className="label">Github</span>
 						</a>
 					</li>
 				</ul>
 			</div>
 			<div className="grid copyright">
-				<p>Copyright &copy; 2022 Abrahym Sharf Eldden. All rights reserved.</p>
+				<p>
+					Copyright &copy; 2022 Abrahym Sharf Eldden. All rights
+					reserved.
+				</p>
 			</div>
 			{/* <nav>
 				<ul>
