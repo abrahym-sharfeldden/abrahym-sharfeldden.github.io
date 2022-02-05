@@ -44,7 +44,9 @@ export default function FooterComponent() {
 							name="linkedin"
 							href="https://www.linkedin.com/in/abrahym-sharfeldden/"
 							className="icon fab fa-linkedin">
-							<span className="label">LinkedIn</span>
+							<span className="label">
+								Abrahym Sharf Eldden's LinkedIn
+							</span>
 						</a>
 					</li>
 					<li>
@@ -52,7 +54,9 @@ export default function FooterComponent() {
 							name="github"
 							href="https://github.com/abrahym-sharfeldden"
 							className="icon fab fa-github">
-							<span className="label">Github</span>
+							<span className="label">
+								Abrahym Sharf Eldden's Github
+							</span>
 						</a>
 					</li>
 				</ul>
