@@ -1,17 +1,17 @@
 language: node_js
- node_js:
-  - 17.4.0
- cache: npm
- directories:
-  - node_modules
- script:
-  - npm test
-  - npm run build
+node_js:
+    - 17.4.0
+cache: npm
+directories:
+    - node_modules
+script:
+    - npm test
+    - npm run build
 deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
-  keep_history: true
-  local_dir: build
-  on:
-    branch: master
+    provider: pages
+    skip-cleanup: true
+    github-token: $GITHUB_TOKEN
+    keep_history: true
+    local_dir: build
+    on:
+        branch: master
