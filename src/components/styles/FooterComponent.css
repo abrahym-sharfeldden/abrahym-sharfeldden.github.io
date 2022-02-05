@@ -1,5 +1,10 @@
 @import url("./fa/css/brands.min.css");
 
+/*
+ *
+ * Default stylings for the footer section
+ *
+ */
 footer {
 	counter-reset: footer-nav;
 	padding-top: 5em;
@@ -11,7 +16,7 @@ footer {
 	grid-template-areas:
 		"fullname location nav"
 		"title email nav"
-		"socials socials social"
+		"socials socials socials"
 		"copyright copyright copyright";
 }
 
@@ -53,20 +58,13 @@ footer p {
 	grid-area: copyright;
 }
 
-footer a {
-	text-decoration: none;
-	color: inherit;
-	font-weight: bold;
-}
-
 .footer-nav ul {
 	display: grid;
-	list-style: none;
 	padding: 0;
 	margin: 0;
 
 	grid-template-columns: auto auto;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: 1fr;
 	column-gap: 5em;
 	grid-template-areas:
 		"home projects"
@@ -74,9 +72,11 @@ footer a {
 		"about contact"
 		"about contact";
 }
+
 .footer-nav ul li:first-child {
 	grid-area: home;
 }
+
 .footer-nav ul li:nth-child(2) {
 	grid-area: about;
 }
@@ -88,20 +88,49 @@ footer a {
 .footer-nav ul li:nth-child(4) {
 	grid-area: contact;
 }
-.footer-nav nav ul li {
-	min-width: 75px;
+
+/*
+ *
+ * Stylings meant to change or be more dynamic
+ *
+ */
+
+.footer-nav li {
+	min-width: 100px;
 	font-size: 1em;
-	transition: font-size 0.1s;
+	height: 20px;
+	transition: font-size 0.3s;
 }
-.footer-nav a:hover {
-	font-size: 0.8em;
+.footer-nav li:hover {
+	font-size: 0.9em;
+}
+
+.footer-nav a {
+	position: relative;
+	height: 50px;
 }
 
 .footer-nav a:before {
 	counter-increment: footer-nav;
-	content: "0" counter(footer-nav);
-	padding-right: 10px;
+	content: "0" counter(footer-nav) " | ";
+	/* padding-right: 10px; */
 	font-size: 0.9em;
+}
+.footer-nav a:after {
+	content: "";
+	width: 0;
+	height: 2px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #fca311;
+	transform-origin: bottom right;
+	transition: width 0.15s ease-out;
+}
+
+.footer-nav a:hover:after {
+	width: 100%;
+	transform-origin: bottom left;
 }
 
 /* .footer-nav ul > li {
@@ -111,12 +140,12 @@ footer a {
 .socials ul {
 	display: flex;
 	flex-direction: row;
-	list-style: none;
 	padding: 0;
 	gap: 20px;
 }
 
 .copyright {
+	font-size: 0.75em;
 	padding-bottom: 20px;
 }
 
@@ -128,4 +157,9 @@ footer a {
 	color: #e5e5e5;
 	opacity: 0.5;
 	font-size: 1.75em;
+	transition: opacity 0.5s;
+}
+
+.icon.fab:hover {
+	opacity: 0.95;
 }

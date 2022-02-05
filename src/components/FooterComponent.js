@@ -50,7 +50,7 @@ export default function FooterComponent() {
 				</ul>
 			</div>
 			<div className="grid copyright">
-				<p>© Abrahym Sharf Eldden</p>
+				<p>Copyright &copy; 2022 Abrahym Sharf Eldden. All rights reserved.</p>
 			</div>
 			{/* <nav>
 				<ul>
