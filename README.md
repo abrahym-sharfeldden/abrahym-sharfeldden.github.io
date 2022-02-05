@@ -30,4 +30,3 @@ After many many years, I've finally been able to conceptualize a design for my p
 -   Webpack integration
     -   Minifying CSS and JS on build
     -   Removing Unused parts of the javascript build
--
