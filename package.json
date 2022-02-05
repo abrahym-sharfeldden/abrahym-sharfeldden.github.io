@@ -19,7 +19,7 @@
 	"bugs": {
 		"url": "https://github.com/abrahym-sharfeldden/abrahym-sharfeldden.github.io/issues"
 	},
-	"homepage": "./",
+	"homepage": "https://abrahym-sharfeldden.github.io",
 	"dependencies": {
 		"normalize.css": "^8.0.1",
 		"react": "^17.0.2",
