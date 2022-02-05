@@ -5,9 +5,8 @@ cache: npm
 directories:
   - node_modules
 install:
-  - npm install
+  - npm ci
 script:
-  - npm test
   - npm run build
 deploy:
   provider: pages
