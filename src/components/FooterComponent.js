@@ -6,7 +6,7 @@ export default function FooterComponent() {
 	return (
 		<footer className="footer-container">
 			<div className="grid name">
-				<h1>Abrahym Sharf Eldden</h1>
+				<h2>Abrahym Sharf Eldden</h2>
 			</div>
 			<div className="grid title">
 				<p>Software Developer</p>
@@ -15,7 +15,7 @@ export default function FooterComponent() {
 				<p>New York, NY</p>
 			</div>
 			<div className="grid email">
-				<a href="mailto: asharfeldden@gmail.com">
+				<a href="mailto: asharfeldden@gmail.com" name="email">
 					asharfeldden@gmail.com
 				</a>
 			</div>
@@ -23,16 +23,16 @@ export default function FooterComponent() {
 				{/* <nav>
 					<ul>
 						<li>
-							<a href="/#">home</a>
+							<a name="home" href="/#">home</a>
 						</li>
 						<li>
-							<a href="/#">about</a>
+							<a name="about" href="/#">about</a>
 						</li>
 						<li>
-							<a href="/#">projects</a>
+							<a name="projects" href="/#">projects</a>
 						</li>
 						<li>
-							<a href="/#">contact</a>
+							<a name="contact" href="/#">contact</a>
 						</li>
 					</ul>
 				</nav> */}
@@ -41,6 +41,7 @@ export default function FooterComponent() {
 				<ul>
 					<li>
 						<a
+							name="linkedin"
 							href="https://www.linkedin.com/in/abrahym-sharfeldden/"
 							className="icon fab fa-linkedin">
 							<span className="label">LinkedIn</span>
@@ -48,6 +49,7 @@ export default function FooterComponent() {
 					</li>
 					<li>
 						<a
+							name="github"
 							href="https://github.com/abrahym-sharfeldden"
 							className="icon fab fa-github">
 							<span className="label">Github</span>
