@@ -19,24 +19,32 @@ export default function FooterComponent() {
 					asharfeldden@gmail.com
 				</a>
 			</div>
-			<div className="grid footer-nav">
-				{/* <nav>
+			{/* <div className="grid footer-nav">
+				<nav>
 					<ul>
 						<li>
-							<a name="home" href="/#">home</a>
+							<a name="home" href="/">
+								home
+							</a>
 						</li>
 						<li>
-							<a name="about" href="/#">about</a>
+							<a name="about" href="/about">
+								about
+							</a>
 						</li>
 						<li>
-							<a name="projects" href="/#">projects</a>
+							<a name="projects" href="/projects">
+								projects
+							</a>
 						</li>
 						<li>
-							<a name="contact" href="/#">contact</a>
+							<a name="contact" href="/contact">
+								contact
+							</a>
 						</li>
 					</ul>
-				</nav> */}
-			</div>
+				</nav>
+			</div> */}
 			<div className="grid socials">
 				<ul>
 					<li>

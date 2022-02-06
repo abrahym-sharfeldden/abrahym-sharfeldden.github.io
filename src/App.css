@@ -56,7 +56,7 @@ a.icon:focus {
 	outline: 2px inset rgb(252, 163, 17);
 }
 
-.wrapper {
+#root {
 	height: 100vh;
 	display: grid;
 	grid-template-columns: 75px 8fr minmax(auto, 600px);

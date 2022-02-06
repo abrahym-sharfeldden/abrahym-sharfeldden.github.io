@@ -1,22 +1,18 @@
-import React from "react";
-import {
-	LeftTabComponent,
-	ContentComponent,
-	NavigationComponent,
-	FooterComponent,
-} from "./components";
+import React, { Suspense } from "react";
+
+import { LeftTabComponent, HeroComponent, FooterComponent } from "./components";
 
 import "the-new-css-reset/css/reset.css";
 import "./App.css";
 
 const App = () => {
+	console.log("page loaded");
 	return (
-		<div className="wrapper">
-			<NavigationComponent />
-			<ContentComponent />
+		<Suspense fallback={<div>Loading...</div>}>
+			<HeroComponent />
 			<LeftTabComponent />
 			<FooterComponent />
-		</div>
+		</Suspense>
 	);
 };
 
