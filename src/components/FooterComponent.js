@@ -19,32 +19,6 @@ export default function FooterComponent() {
 					asharfeldden@gmail.com
 				</a>
 			</div>
-			{/* <div className="grid footer-nav">
-				<nav>
-					<ul>
-						<li>
-							<a name="home" href="/">
-								home
-							</a>
-						</li>
-						<li>
-							<a name="about" href="/about">
-								about
-							</a>
-						</li>
-						<li>
-							<a name="projects" href="/projects">
-								projects
-							</a>
-						</li>
-						<li>
-							<a name="contact" href="/contact">
-								contact
-							</a>
-						</li>
-					</ul>
-				</nav>
-			</div> */}
 			<div className="grid socials">
 				<ul>
 					<li>
@@ -75,28 +49,6 @@ export default function FooterComponent() {
 					reserved.
 				</p>
 			</div>
-			{/* <nav>
-				<ul>
-					<li>
-						<div>
-							<h1>Abrahym Sharf Eldden</h1>
-							<p>Software Developer</p>
-						</div>
-					</li>
-					<li>
-						<div>
-							<p>New York, NY</p>
-							<p>asharfeldden@gmail.com</p>
-						</div>
-					</li>
-					<li>
-						<div>
-							<p>New York, NY</p>
-							<p>asharfeldden@gmail.com</p>
-						</div>
-					</li>
-				</ul>
-			</nav> */}
 		</footer>
 	);
 }
