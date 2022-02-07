@@ -6,9 +6,11 @@ export default function HeroComponent() {
 
 	const handleRouteChange = (newRoute) => setRoute(newRoute);
 
+	console.log(route);
+
 	return (
 		<>
-			<NavigationComponent onChange={handleRouteChange} />
+			<NavigationComponent route={route} onChange={handleRouteChange} />
 			<ContentComponent route={route} />
 		</>
 	);

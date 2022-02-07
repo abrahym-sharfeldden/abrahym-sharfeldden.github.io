@@ -3,8 +3,9 @@
 	letter-spacing: 3px;
 }
 .left-tab-container h3 {
-	width: fit-content;
+	width: max-content;
 	margin: 0;
 	text-transform: uppercase;
-	transform: rotateZ(-90deg) translate(-125px, -10px);
+	opacity: 0.5;
+	transform: rotateZ(-90deg) translate(-200px, -75px);
 }

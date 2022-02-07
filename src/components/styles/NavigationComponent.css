@@ -14,7 +14,7 @@ header {
 }
 
 .header-nav ul {
-	height: clamp(200px, 40%, 600px);
+	height: clamp(300px, 40%, 600px);
 	list-style: none;
 	row-gap: 100px;
 	padding: 0;
@@ -22,7 +22,22 @@ header {
 
 	font-variant: small-caps;
 	font-size: 2rem;
-	padding-left: 5rem;
 	line-height: 2.5rem;
 	font-weight: bolder;
+}
+
+.header-nav ul li {
+	padding-left: 5rem;
+	padding-block: 0.5rem;
+	transition: background 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+.header-nav ul li:hover,
+.header-nav ul li.active {
+	background: #000;
+	color: #fca311;
+}
+
+.header-nav ul li a {
+	pointer-events: none;
 }
