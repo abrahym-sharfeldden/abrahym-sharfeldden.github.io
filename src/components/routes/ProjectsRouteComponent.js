@@ -15,8 +15,8 @@ export default function ProjectsRouteComponent() {
 				</header>
 				<div className="tools-section">
 					<ul>
-						{project.tools.map(tool => (
-							<li class="tags">
+						{project.tools.map((tool, index) => (
+							<li className="tags" key={index}>
 								<a href="/#">{tool}</a>
 							</li>
 						))}
@@ -34,15 +34,6 @@ export default function ProjectsRouteComponent() {
 							<span className="label">Live Server</span>
 						</a>
 					</div>
-					{/* <div className="info skills">
-						<a
-							name="skills"
-							href="./#"
-							className="icon fas fa-tools">
-							<br />
-							<span className="label">Tools</span>
-						</a>
-					</div> */}
 					<div className="info code">
 						<a
 							className="icon fas fa-code"

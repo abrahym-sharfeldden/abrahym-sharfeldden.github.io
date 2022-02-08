@@ -88,7 +88,6 @@
 	letter-spacing: 0.15ch;
 	line-height: 1.1em;
 	text-decoration: none;
-	opacity: 0;
 	color: inherit;
 	cursor: pointer;
 
@@ -96,20 +95,22 @@
 	-webkit-box-orient: vertical;
 	text-overflow: ellipsis;
 	font-weight: 300;
-	visibility: hidden;
-	transition: opacity 0.5s ease-in-out;
 }
-/* .card-text p:hover {
-	background: linear-gradient(45deg, #fca311, #fb4b4e);
-	text-shadow: none;
-	-webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;
-	background-clip: text;
-} */
+
 .card:hover .card-text h1 {
 	color: hsla(0, 0%, 100%, 0.8);
 }
-.card:hover .card-text p {
+.tags,
+.card-text p {
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.5s ease-in-out;
+}
+.tags {
+	transition-duration: 1s;
+}
+.card:hover .card-text p,
+.card:hover .tags {
 	visibility: visible;
 	opacity: 1;
 }
@@ -119,9 +120,36 @@
 
 .tools-section ul {
 	display: flex;
-	gap: 1ch;
+	gap: 0 1ch;
 	flex-direction: row;
 	flex-wrap: wrap;
+}
+
+.tags {
+	padding-block: 0.25rem;
+	line-height: 2;
+	margin-bottom: 0;
+}
+
+.tags a {
+	font-style: normal;
+	font-weight: bolder;
+	color: #7a7a8c;
+	/* text-transform: uppercase; */
+	font-size: 0.75rem;
+	border: 3px solid #28242f;
+	border-radius: 2rem;
+	padding: 0.2rem 0.85rem 0.25rem;
+}
+
+.tags a:hover {
+	background: linear-gradient(90deg, #ca7d02, #fca311);
+	text-shadow: none;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-box-decoration-break: clone;
+	background-clip: text;
+	border-color: #fca311;
 }
 
 .card-info {
