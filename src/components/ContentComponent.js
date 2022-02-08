@@ -8,10 +8,10 @@ const Projects = React.lazy(() => import("./routes/ProjectsRouteComponent"));
 const Contact = React.lazy(() => import("./routes/ContactRouteComponent"));
 
 export default function ContentComponent({ route }) {
-	const render = (route) => {
+	const render = route => {
 		switch (route.toLowerCase()) {
-			case "skills":
-				return <Skills />;
+			// case "skills":
+			// 	return <Skills />;
 			case "projects":
 				return <Projects />;
 			case "Contact":

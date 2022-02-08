@@ -2,9 +2,9 @@ import React from "react";
 import { NavigationComponent, ContentComponent } from "./";
 
 export default function HeroComponent() {
-	const [route, setRoute] = React.useState("projects");
+	const [route, setRoute] = React.useState("home");
 
-	const handleRouteChange = (newRoute) => setRoute(newRoute);
+	const handleRouteChange = newRoute => setRoute(newRoute);
 
 	return (
 		<>

@@ -5,7 +5,7 @@ import "./styles/NavigationComponent.css";
 export default function NavigationComponent(props) {
 	const [active, setActive] = React.useState("");
 
-	const handleClick = (event) => {
+	const handleClick = event => {
 		event.preventDefault();
 		const dataRoute = String(event.target.getAttribute("data-route"));
 
@@ -29,12 +29,12 @@ export default function NavigationComponent(props) {
 						onClick={handleClick}>
 						<a href="/">projects</a>
 					</li>
-					<li
+					{/* <li
 						className={active === "skills" ? "active" : null}
 						data-route="skills"
 						onClick={handleClick}>
 						<a href="/">skills</a>
-					</li>
+					</li> */}
 					<li
 						className={active === "contact" ? "active" : null}
 						data-route="contact"
