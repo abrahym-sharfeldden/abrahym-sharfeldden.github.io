@@ -1,0 +1,149 @@
+.projects-section {
+	display: flex;
+	padding: 3rem;
+	overflow-x: scroll;
+	font-family: monospace;
+}
+
+.projects-section::-webkit-scrollbar {
+	/* width: 10px; */
+	height: 15px;
+}
+.projects-section::-webkit-scrollbar-thumb {
+	background: #201c29;
+	border-radius: 10px;
+	box-shadow: inset 2px 2px 2px hsla(0, 0%, 25%, 0.5),
+		inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+.projects-section::-webkit-scrollbar-track {
+	background: rgba(0, 0, 0, 0.25);
+}
+
+.card {
+	/* display: grid;
+	grid-auto-columns: 1fr;
+	grid-template-rows: repeat(3, 1fr);
+	gap: 5px; */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	position: relative;
+	width: clamp(400px, 20vw, 800px);
+	aspect-ratio: 16 / 9;
+
+	min-width: 250px;
+	min-height: 400px;
+
+	border-radius: 16px;
+	background: #17141d;
+	scroll-snap-align: start;
+	clear: both;
+	box-shadow: -1rem 0 2rem #000;
+
+	transition: 0.25s;
+}
+.card:hover {
+	transform: translateY(-1rem);
+}
+
+/* general sibling combinator - grabs all the siblings around the element but not the element itself */
+.card:hover ~ .card {
+	transform: translateX(130px);
+}
+
+.card:not(:first-child) {
+	margin-left: -130px;
+}
+
+.card-text {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 1.5rem;
+}
+.card-text h1 {
+	font-size: 2em;
+	position: relative;
+	color: hsla(0, 0%, 100%, 0.5);
+	transition: color 0.25s ease-in;
+}
+.card-text h1::after {
+	content: "";
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: hsla(0, 0%, 100%, 0.5);
+}
+.card-text p {
+	overflow: hidden;
+	height: 150px;
+	padding-block: 2rem;
+	margin: 0.25rem 0 auto;
+	border: 0;
+
+	font-size: 1.1em;
+	letter-spacing: 0.15ch;
+	line-height: 1.1em;
+	text-decoration: none;
+	opacity: 0;
+	color: inherit;
+	cursor: pointer;
+
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	font-weight: 300;
+	visibility: hidden;
+	transition: opacity 0.5s ease-in-out;
+}
+/* .card-text p:hover {
+	background: linear-gradient(45deg, #fca311, #fb4b4e);
+	text-shadow: none;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+} */
+.card:hover .card-text h1 {
+	color: hsla(0, 0%, 100%, 0.8);
+}
+.card:hover .card-text p {
+	visibility: visible;
+	opacity: 1;
+}
+.tools-section {
+	padding-inline: 1.5em;
+}
+
+.tools-section ul {
+	display: flex;
+	gap: 1ch;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.card-info {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	font-size: 1.75em;
+	font-weight: lighter;
+	background: hsla(0, 0%, 50%, 0.15);
+	padding: 0.15ch;
+	text-align: center;
+
+	border-bottom-left-radius: 16px;
+	border-bottom-right-radius: 16px;
+}
+
+.info {
+	padding: 0.5em;
+}
+
+/* .info .label {
+	display: block;
+	font-size: 0.5em;
+	font-variant: small-caps;
+} */

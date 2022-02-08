@@ -1,4 +1,7 @@
 @import-normalize; /* bring in normalize.css styles */
+@import url("./components/styles/fa/css/brands.min.css"); /* Needed for linkedIn and Github icons */
+@import url("./components/styles/fa/css/solid.min.css"); /* Needed for Projects Icons */
+@import url("./components/styles/fa/css/fontawesome.min.css"); /* Needed for Projects Icons */
 
 *,
 *:before,
@@ -17,7 +20,9 @@ body {
 	font-family: "Trebuchet MS", sans-serif;
 	font-size: 16px;
 	background: #14213d;
+	background: #17141d;
 	color: #e5e5e5;
+	width: 100vw;
 	/* background: url("./images/bg01.jpg") 100% 100%  no-repeat; */
 }
 
@@ -57,9 +62,19 @@ a.icon:focus {
 }
 
 #root {
+	width: 100vw;
+	height: 100vh;
+}
+
+/* 3440 - 75 - 600 */
+.wrapper {
 	height: 100vh;
 	display: grid;
-	grid-template-columns: 75px 8fr minmax(auto, 600px);
+	grid-template-columns: 75px clamp(250px, calc(75% - 75px), 2700px) clamp(
+			250px,
+			calc(25% - 75px),
+			650px
+		);
 	grid-template-rows: 3fr 3fr 2fr 1fr;
 	grid-template-areas:
 		"lefttab content header"

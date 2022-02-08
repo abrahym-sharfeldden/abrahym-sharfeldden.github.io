@@ -8,9 +8,11 @@ import "./App.css";
 const App = () => {
 	return (
 		<Suspense fallback={<div>Loading...</div>}>
-			<HeroComponent />
-			<LeftTabComponent />
-			<FooterComponent />
+			<div className="wrapper">
+				<HeroComponent />
+				<LeftTabComponent />
+				<FooterComponent />
+			</div>
 		</Suspense>
 	);
 };

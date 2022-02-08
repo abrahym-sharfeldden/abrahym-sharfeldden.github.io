@@ -1,0 +1,26 @@
+[
+	{
+		"name": "Food Tracker App",
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, amet? Labore, quis saepe. Iste ad modi voluptas exercitationem harum blanditiis vel odit fugit! Omnis ab, dolores nisi quia autem aperiam",
+		"image": "./images/food-tracker-app",
+		"tools": ["React", "Express", "PostgreSQL", "Sequelize"],
+		"github_repo": "https://github.com/abrahym-sharfeldden/abrahym-sharfeldden.github.io",
+		"live_server": "https://abrahym-sharfeldden.github.io/"
+	},
+	{
+		"name": "Color Game",
+		"description": "Cum, amet? Labore, quis saepe. Iste ad modi voluptas exercitationem harum blanditiis vel odit fugit! Omnis ab, dolores nisi quia autem aperiam",
+		"image": "./images/color-game",
+		"tools": ["Abrahym Sharf Eldden", "Other Name"],
+		"github_repo": "https://github.com/abrahym-sharfeldden/color-game",
+		"live_server": "https://abrahym-sharfeldden.github.io/color-game"
+	},
+	{
+		"name": "Sorting Visualizer",
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, amet? Labore, quis saepe. Iste ad modi voluptas ",
+		"image": "./images/sorting-visualizer",
+		"tools": ["Abrahym Sharf Eldden", "Other Name"],
+		"github_repo": "https://github.com/abrahym-sharfeldden/sorting-visualizer",
+		"live_server": "https://abrahym-sharfeldden.github.io/sorting-visualizer"
+	}
+]
