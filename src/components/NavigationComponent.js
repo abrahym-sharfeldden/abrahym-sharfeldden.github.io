@@ -29,18 +29,6 @@ export default function NavigationComponent(props) {
 						onClick={handleClick}>
 						<a href="/">projects</a>
 					</li>
-					{/* <li
-						className={active === "skills" ? "active" : null}
-						data-route="skills"
-						onClick={handleClick}>
-						<a href="/">skills</a>
-					</li> */}
-					<li
-						className={active === "contact" ? "active" : null}
-						data-route="contact"
-						onClick={handleClick}>
-						<a href="/">contact</a>
-					</li>
 				</ul>
 			</nav>
 		</header>

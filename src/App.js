@@ -10,7 +10,7 @@ const App = () => {
 		<Suspense fallback={<div>Loading...</div>}>
 			<div className="wrapper">
 				<HeroComponent />
-				<LeftTabComponent />
+				{/* <LeftTabComponent /> */}
 				<FooterComponent />
 			</div>
 		</Suspense>
