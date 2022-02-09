@@ -24,6 +24,10 @@ body {
 	height: 100vh;
 	background: var(--background-gradient);
 	color: var(--text-color-light);
+	font-family: "Courier New", Courier, monospace;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 h1,
@@ -32,6 +36,7 @@ h3,
 h4,
 h5,
 h6 {
+	margin: 0;
 	line-height: 1.25em;
 	font-weight: 700;
 }
@@ -52,4 +57,11 @@ a {
 	text-decoration: none;
 	color: inherit;
 	font-weight: bold;
+}
+
+.header img {
+	width: 200px;
+	height: auto;
+	border-radius: 100px;
+	background: grey;
 }

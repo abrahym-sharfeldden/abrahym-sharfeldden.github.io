@@ -6,9 +6,14 @@ import "./App.css";
 
 const App = () => {
 	return (
-		<div className="wrapper">
-			<h1>Hello, world!</h1>
-		</div>
+		<section className="container">
+			<header className="header">
+				<img
+					src="./images/abrahym-sharfeldden.jpg"
+					alt="A head-shot of Abrahym Sharf Eldden"
+				/>
+			</header>
+		</section>
 	);
 };
 
