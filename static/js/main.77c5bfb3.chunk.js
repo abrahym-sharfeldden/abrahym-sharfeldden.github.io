@@ -1,2 +1,0 @@
-(this["webpackJsonpabrahym-sharfeldden.github.io"]=this["webpackJsonpabrahym-sharfeldden.github.io"]||[]).push([[0],{10:function(e,t,n){},11:function(e,t,n){"use strict";n.r(t);var r=n(0),a=n.n(r),l=n(2),o=(n(8),n(9),n(10),function(){return a.a.createElement("div",{className:"wrapper"},a.a.createElement("h1",null,"Hello, world!"))});Object(l.render)(a.a.createElement(o,null),document.getElementById("root"))},3:function(e,t,n){e.exports=n(11)}},[[3,1,2]]]);
-//# sourceMappingURL=main.77c5bfb3.chunk.js.map
