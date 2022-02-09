@@ -11,22 +11,7 @@ After many many years, I've finally been able to conceptualize a design for my p
 
 ## MVP
 
--   Responsive
--   manifest.json
--   a11y integration
--   humans.txt, robots.txt
--   Animate things
--   Include Toggleable animations
--   Use CSS :root themes
--   Incorportate Modern CSS practices
--   Incorporate service-worker
-
-## MMP
-
--   Favicon
--   CSS and JS linter
--   Dynamically import components (code-splitting)
--   CSS autoprefixer integration
--   Webpack integration
-    -   Minifying CSS and JS on build
-    -   Removing Unused parts of the javascript build
+-   Barebones design
+-   2-3 Projects
+-   A well written about me section
+-   A working contact section OR provide contact details
