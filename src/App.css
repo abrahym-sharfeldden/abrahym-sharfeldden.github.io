@@ -1,7 +1,3 @@
-@import url("./components/styles/fa/css/brands.min.css"); /* Needed for linkedIn and Github icons */
-@import url("./components/styles/fa/css/solid.min.css"); /* Needed for Projects Icons */
-@import url("./components/styles/fa/css/fontawesome.min.css"); /* Needed for Projects Icons */
-
 :root {
 	--primary-color: hsla(260, 18.4%, 9.6%, 1);
 	--secondary-color: hsla(221, 50.6%, 15.9%, 1);
