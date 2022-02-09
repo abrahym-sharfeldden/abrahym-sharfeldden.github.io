@@ -3,6 +3,7 @@ import React, { Suspense } from "react";
 import { LeftTabComponent, HeroComponent, FooterComponent } from "./components";
 
 import "the-new-css-reset/css/reset.css";
+import "normalize.css";
 import "./App.css";
 
 const App = () => {
