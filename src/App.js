@@ -7,12 +7,36 @@ import "./App.css";
 const App = () => {
 	return (
 		<section className="container">
-			<header className="header">
-				<img
-					src="./images/abrahym-sharfeldden.jpg"
-					alt="A head-shot of Abrahym Sharf Eldden"
-				/>
-			</header>
+			<div className="header">
+				<div className="image-container"></div>
+			</div>
+			<div className="content">
+				<h1>Abrahym Sharf Eldden</h1>
+				<p>Software Developer</p>
+
+				<ul>
+					<li>
+						<a
+							name="linkedin"
+							href="https://www.linkedin.com/in/abrahym-sharfeldden/"
+							className="fab fa-linkedin fa-2x">
+							<span className="label">
+								Abrahym Sharf Eldden's LinkedIn
+							</span>
+						</a>
+					</li>
+					<li>
+						<a
+							name="github"
+							href="https://github.com/abrahym-sharfeldden"
+							className="fab fa-github fa-2x">
+							<span className="label">
+								Abrahym Sharf Eldden's Github
+							</span>
+						</a>
+					</li>
+				</ul>
+			</div>
 		</section>
 	);
 };

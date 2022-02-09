@@ -24,7 +24,8 @@ body {
 	height: 100vh;
 	background: var(--background-gradient);
 	color: var(--text-color-light);
-	font-family: "Courier New", Courier, monospace;
+
+	font-family: "Trebuchet MS", sans-serif;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -59,9 +60,61 @@ a {
 	font-weight: bold;
 }
 
-.header img {
-	width: 200px;
-	height: auto;
-	border-radius: 100px;
-	background: grey;
+.container {
+	width: auto;
+	padding: 1rem 2rem;
+
+	box-shadow: -1rem 0 2rem var(--primary-color);
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.header .image-container {
+	width: 160px;
+	height: 160px;
+	background-image: url("./images/abrahym-sharfeldden.jpg");
+	background-color: grey;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 100%;
+}
+
+.content {
+	padding-left: 3rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.content h1 {
+	font-size: 2.5rem;
+	margin-bottom: 0;
+	font-variant: small-caps;
+}
+
+.content ul {
+	display: flex;
+}
+
+.content ul li {
+	padding: 1em 0.75em;
+}
+
+.content ul li:first-child {
+	padding-left: 0;
+}
+
+.fab {
+	opacity: 0.5;
+	transition: 0.35s;
+}
+.fab:hover {
+	color: var(--accent-color);
+	opacity: 1;
+}
+
+.label {
+	display: none;
 }
