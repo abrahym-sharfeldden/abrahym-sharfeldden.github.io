@@ -19,7 +19,9 @@ const App = () => {
 						<a
 							name="linkedin"
 							href="https://www.linkedin.com/in/abrahym-sharfeldden/"
-							className="fab fa-linkedin fa-2x">
+							className="fab fa-linkedin fa-2x"
+							target="_blank"
+							rel="noopener noreferrer">
 							<span className="label">
 								Abrahym Sharf Eldden's LinkedIn
 							</span>
@@ -29,7 +31,9 @@ const App = () => {
 						<a
 							name="github"
 							href="https://github.com/abrahym-sharfeldden"
-							className="fab fa-github fa-2x">
+							className="fab fa-github fa-2x"
+							target="_blank"
+							rel="noopener noreferrer">
 							<span className="label">
 								Abrahym Sharf Eldden's Github
 							</span>
