@@ -8,10 +8,3 @@ After many many years, I've finally been able to conceptualize a design for my p
 
 -   React
 -   NodeJS
-
-## MVP
-
--   Barebones design
--   2-3 Projects
--   A well written about me section
--   A working contact section OR provide contact details
