@@ -5,7 +5,7 @@
 	--text-color-light: hsla(0, 0%, 89.8%, 1);
 
 	--background-gradient: linear-gradient(
-		180deg,
+		to left,
 		var(--primary-color),
 		var(--secondary-color)
 	);
@@ -22,7 +22,55 @@
 body {
 	width: 100vw;
 	height: 100vh;
-	background: var(--background-gradient);
+	/* IE10 Consumer Preview */
+	background: -ms-linear-gradient(
+		to bottom,
+		var(--primary-color) 0%,
+		var(--secondary-color) 100%
+	);
+	/* Mozilla Firefox */
+	background: -moz-linear-gradient(
+		to bottom,
+		var(--primary-color) 0%,
+		var(--secondary-color) 100%
+	);
+	/* Opera */
+	background: -o-linear-gradient(
+		to bottom,
+		var(--primary-color) 0%,
+		var(--secondary-color) 100%
+	);
+	/* Webkit (Safari/Chrome 10) */
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, var(--primary-color)),
+		color-stop(1, var(--secondary-color))
+	);
+	/* Webkit (Chrome 11+) */
+	background: -webkit-linear-gradient(
+		to bottom,
+		var(--primary-color) 0%,
+		var(--secondary-color) 100%
+	);
+	/* W3C Markup, IE10 Release Preview */
+	background: linear-gradient(
+		to bottom,
+		var(--primary-color) 0%,
+		var(--secondary-color) 100%
+	);
+	/* background: -moz-linear-gradient(
+		top,
+		var(--primary-color),
+		var(--secondary-color)
+	);
+	background: -webkit-linear-gradient(
+		top,
+		var(--primary-color),
+		var(--secondary-color)
+	);
+	background: var(--background-gradient); */
 	color: var(--text-color-light);
 
 	font-family: "Trebuchet MS", sans-serif;
@@ -72,6 +120,12 @@ a {
 	justify-content: space-between;
 }
 
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .header .image-container {
 	width: 160px;
 	height: 160px;
@@ -95,12 +149,16 @@ a {
 	font-variant: small-caps;
 }
 
+.content p {
+	font-size: 0.9rem;
+}
+
 .content ul {
 	display: flex;
 }
 
 .content ul li {
-	padding: 1em 0.75em;
+	padding: 0 0.75em;
 }
 
 .content ul li:first-child {
@@ -118,4 +176,41 @@ a {
 
 .label {
 	display: none;
+}
+
+.btn-ghost {
+	background: transparent;
+	position: relative;
+	display: inline-block;
+	margin: 15px 0;
+	line-height: 1;
+	color: var(--text-color-light);
+	font-size: 12px;
+	text-transform: uppercase;
+	padding: 14px 25px;
+	font-weight: 600;
+	border-radius: 5px;
+	border: 1px solid var(--text-color-light);
+	width: fit-content;
+
+	transition: 0.3s ease;
+}
+
+.btn-ghost:hover {
+	background: var(--accent-color);
+	border-color: var(--accent-color);
+	color: var(--text-color-light);
+}
+
+@media only screen and (max-width: 767px) {
+	.container {
+		flex-direction: column;
+	}
+
+	.content {
+		align-items: center;
+		padding: 0;
+
+		gap: 0.5rem;
+	}
 }

@@ -1,5 +1,5 @@
 import React from "react";
-
+import pdf from "./resume.pdf";
 import "the-new-css-reset/css/reset.css";
 import "normalize.css";
 import "./App.css";
@@ -13,6 +13,18 @@ const App = () => {
 			<div className="content">
 				<h1>Abrahym Sharf Eldden</h1>
 				<p>Software Developer</p>
+
+				<a
+					href="./#"
+					className="btn-ghost btn-strong-style light-blue"
+					onClick={() => {
+						window.open(pdf);
+					}}>
+					<i className="fa-memo"></i> Resume
+				</a>
+				{/* <button className="button" >
+					<i className="fa-solid fa-memo"></i>Resume
+				</button> */}
 
 				<ul>
 					<li>
