@@ -16,10 +16,7 @@ const App = () => {
 				<button
 					className="btn"
 					onClick={() => {
-						window.open(
-							process.env.PUBLIC_URL +
-								"/Sharf Eldden, Abrahym - Resume.pdf"
-						);
+						window.open(process.env.PUBLIC_URL + "/resume.pdf");
 					}}>
 					Resume
 				</button>
