@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "680c7ae1d60337c0496638f6bed65d8d",
+    "revision": "3982e20764567b469ac580ffa4d6c6a6",
     "url": "/index.html"
   },
   {
-    "revision": "258ee2da710c49f90856",
+    "revision": "b165921d2b956fd7d8b0",
     "url": "/static/css/2.ba9e668b.chunk.css"
   },
   {
-    "revision": "f26c721d35fb46d130c3",
+    "revision": "af9c382ba6799d23ab59",
     "url": "/static/css/main.3773975c.chunk.css"
   },
   {
-    "revision": "258ee2da710c49f90856",
-    "url": "/static/js/2.9c8d4f97.chunk.js"
+    "revision": "b165921d2b956fd7d8b0",
+    "url": "/static/js/2.f00c624d.chunk.js"
   },
   {
     "revision": "fb6fca4f0fa26a7e27d26480a74532c9",
-    "url": "/static/js/2.9c8d4f97.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.f00c624d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f26c721d35fb46d130c3",
-    "url": "/static/js/main.0af98702.chunk.js"
+    "revision": "af9c382ba6799d23ab59",
+    "url": "/static/js/main.ead915d9.chunk.js"
   },
   {
     "revision": "8b14ff660c773a63dc95",
@@ -30,9 +30,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "bb63c285f9884e7697fcf5932e2ff9ab",
     "url": "/static/media/abrahym-sharfeldden.bb63c285.jpg"
-  },
-  {
-    "revision": "57a17435977030f77e38ba2742c4fcaf",
-    "url": "/static/media/resume.57a17435.pdf"
   }
 ]);
