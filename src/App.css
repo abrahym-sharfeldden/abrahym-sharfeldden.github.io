@@ -60,17 +60,6 @@ body {
 		var(--primary-color) 0%,
 		var(--secondary-color) 100%
 	);
-	/* background: -moz-linear-gradient(
-		top,
-		var(--primary-color),
-		var(--secondary-color)
-	);
-	background: -webkit-linear-gradient(
-		top,
-		var(--primary-color),
-		var(--secondary-color)
-	);
-	background: var(--background-gradient); */
 	color: var(--text-color-light);
 
 	font-family: "Trebuchet MS", sans-serif;
@@ -178,7 +167,7 @@ a {
 	display: none;
 }
 
-.btn-ghost {
+.btn {
 	background: transparent;
 	position: relative;
 	display: inline-block;
@@ -196,7 +185,7 @@ a {
 	transition: 0.3s ease;
 }
 
-.btn-ghost:hover {
+.btn:hover {
 	background: var(--accent-color);
 	border-color: var(--accent-color);
 	color: var(--text-color-light);
