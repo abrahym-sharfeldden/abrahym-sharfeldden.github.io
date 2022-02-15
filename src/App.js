@@ -1,5 +1,5 @@
 import React from "react";
-import pdf from "./resume.pdf";
+// import pdf from "./resume.pdf";
 import "the-new-css-reset/css/reset.css";
 import "normalize.css";
 import "./App.css";
@@ -18,7 +18,10 @@ const App = () => {
 					href="./#"
 					className="btn-ghost btn-strong-style light-blue"
 					onClick={() => {
-						window.open(pdf);
+						window.open(
+							process.env.PUBLIC_URL +
+								"/Sharf Eldden, Abrahym - Resume.pdf"
+						);
 					}}>
 					<i className="fa-memo"></i> Resume
 				</a>
