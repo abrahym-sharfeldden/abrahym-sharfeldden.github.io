@@ -1,7 +1,7 @@
 {
 	"name": "abrahym-sharfeldden.github.io",
 	"version": "1.0.0",
-	"description": "",
+	"description": "Abrahym Sharf Eldden's Portfolio website",
 	"main": "index.js",
 	"scripts": {
 		"start": "react-scripts start",
@@ -19,7 +19,7 @@
 	"bugs": {
 		"url": "https://github.com/abrahym-sharfeldden/abrahym-sharfeldden.github.io/issues"
 	},
-	"homepage": "https://abrahym-sharfeldden.github.io/",
+	"homepage": "https://abrahym.dev",
 	"dependencies": {
 		"normalize.css": "^8.0.1",
 		"react": "^17.0.2",
